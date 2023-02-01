@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
     <h1>Shantay Dixon</h1>
-    <p>My name is Shantay Dixon. I am a third year student. My major is Computer Science.</p>
+    <img src="{{ url_for('static', filename='chocolatePic.jpg') }}" alt="Picture of Chocolate"/>
+    <p><span>My name is Shantay Dixon. I am a third year student. My major is Computer Science. I like Chocolate. 
+        <br>
+        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis massa nibh. Nullam in orci libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur ligula odio, hendrerit tempor mollis vel, sagittis id sem. Mauris tincidunt cursus lorem, a mattis tellus bibendum eu. Duis sagittis pharetra nunc, ut sodales dui sollicitudin sed. Nulla id consectetur nibh, eget posuere nunc.
+    </span></p>
+    
 </body>
 </html>
